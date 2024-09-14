@@ -37,6 +37,8 @@ const Form = () => {
         <Message patient={patient} />
       ) : (
         <form className={FormStyles.formContainer} onSubmit={handleSubmit}>
+          <h2>¿Deseas conocer más?</h2>
+          <p>Envíanos tus datos y te contactaremos</p>
           <div className={FormStyles.formGroup}>
             <label className={FormStyles.label}>Nombre:</label>
             <input
@@ -61,7 +63,7 @@ const Form = () => {
         </form>
       )}
       {error ? (
-        <h4 style={{ color: "red" }}>Verifique bien la información</h4>
+        <h4 style={{ color: "red" }}>Por favor verifique su información nuevamente</h4>
       ) : null}
     </div>
   );
