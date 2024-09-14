@@ -10,12 +10,13 @@
   --table-row-bg-color: #dddddd;
   --footer-bg-color: #f9f9f9;
   --button-color: #222;
-  --image-dh: url('../public/images/DH.png');
-  --image-fav: url('../public/images/favLigth.png');
+  --image-dh: url('/images/DH.png');
+  --image-fav: url('/images/favLigth.png');
   --form-background-color: white;
   --form-text-color: black;
   --form-button-background-color: beige;
   --form-button-hover-color: #ccc;
+  --filter-img: invert(100%)
 }
 
 body.dark-theme {
@@ -30,12 +31,13 @@ body.dark-theme {
   --table-row-bg-color: #333;
   --footer-bg-color: #444;
   --button-color: #f9f9f9;
-  --image-dh: url('../public/images/DHDark.png');
-  --image-fav: url('../public/images/favDark.png');
+  --image-dh: url('/images/DHDark.png');
+  --image-fav: url('/images/favDark.png');
   --form-background-color: #1e1e1e;
   --form-text-color: #e0e0e0;
   --form-button-background-color: #333;
   --form-button-hover-color: #555;
+  --filter-img: none
 }
 
 body {
@@ -103,12 +105,12 @@ a:hover {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 100%;
+  width: auto;
   height: 40px;
   margin-top: 2rem;
   background-color: var(--footer-bg-color);
@@ -121,6 +123,19 @@ footer > img{
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
+}
+
+.iconImagesContainer{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; 
+}
+.icoImages{
+  width: 35px;
+  height: 35px;
+  filter: var(--filter-img);
 }
 
 form{

@@ -8,8 +8,8 @@ const Favs = () => {
   const { state } = useGlobalStates();
 
   const imageSrc = state.theme === "dark" 
-    ? "../public/images/favDark.png" 
-    : "../public/images/favLigth.png";
+    ? "/images/favDark.png" 
+    : "/images/favLigth.png";
 
   return (
     <>

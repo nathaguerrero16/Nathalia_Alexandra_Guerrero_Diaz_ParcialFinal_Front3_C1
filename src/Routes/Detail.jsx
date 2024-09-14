@@ -34,7 +34,7 @@ const Detail = () => {
       ) : (
         <div className='detailContainer'>
           <img
-          src="../../public/images/doctor.jpg"
+          src="/images/doctor.jpg"
           alt="dentist img"
           className="cardImg"
           />
