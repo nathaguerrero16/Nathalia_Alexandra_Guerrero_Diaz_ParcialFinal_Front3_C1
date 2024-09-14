@@ -50,7 +50,7 @@ const Form = () => {
             />
           </div>
           <div className={FormStyles.formGroup}>
-            <label className={FormStyles.label}>Direccion:</label>
+            <label className={FormStyles.label}>Correo:</label>
             <input
               className={FormStyles.formInput}
               type="text"
